@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial de GitFlow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Flujo de Trabajo con GitFlow</h1>
+    <p>Este es un archivo para practicar GitFlow. Sigue los pasos y usa los comandos en tu terminal.</p>
+    
+    <h2>1. Inicializar el repositorio</h2>
+    <pre>git init</pre>
+    <p>Esto crea un nuevo repositorio en tu carpeta.</p>
+
+    <h2>2. Crear la rama <code>develop</code></h2>
+    <pre>git checkout -b develop</pre>
+    <p>Esta es la rama principal de desarrollo.</p>
+
+    <h2>3. Crear una nueva rama de funcionalidad</h2>
+    <pre>git checkout -b feature/nueva-funcionalidad</pre>
+    <p>Aquí cada colaborador trabajará en su propia rama.</p>
+
+    <h2>4. Editar código</h2>
+    <p>Modifica este archivo y guarda los cambios.</p>
+
+    <h2>5. Hacer commit de los cambios</h2>
+    <pre>
+git add .
+git commit -m "Añadir nueva funcionalidad"
+    </pre>
+
+    <h2>6. Subir los cambios a GitHub</h2>
+    <pre>git push origin feature/nueva-funcionalidad</pre>
+    <p>Luego, ve a GitHub y crea un Pull Request (PR).</p>
+
+    <h2>7. Revisar y hacer merge a <code>develop</code></h2>
+    <pre>
+git checkout develop
+git pull origin develop
+git merge feature/nueva-funcionalidad
+git push origin develop
+    </pre>
+    <p>Después de verificar que todo funciona, se puede hacer merge a <code>main</code>.</p>
+
+    <script>
+        console.log("Bienvenido al tutorial de GitFlow!");
+        console.log("Sigue los pasos en el documento y usa la terminal para practicar.");
+    </script>
+</body>
+</html>

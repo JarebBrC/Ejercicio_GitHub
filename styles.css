@@ -87,7 +87,6 @@ button:hover {
 script {
     display: none;
 }
-<<<<<<< HEAD
 /* estilos de la navbar*/
 
 .navbar{
@@ -169,7 +168,6 @@ script {
     stroke-dashoffset: 0;
     stroke-dasharray: 0 0 10 40 10 40;
     transition: 0.5s !important;
-=======
 
 /* Tabla status */
 @keyframes blinkCursor {
@@ -261,6 +259,5 @@ script {
       typeAndDelete 4s steps(11) infinite,
       blinkCursor 0.5s step-end infinite alternate;
     margin-top: 1.5em;
->>>>>>> a9ff863 (Agregue una tabla que tiene por texto Loading)
   }
-  
+}
